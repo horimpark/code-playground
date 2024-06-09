@@ -16,7 +16,3 @@ def flip_pancakes(stack):
             flips.append(size - 1)
             stack = flip(stack, size)
     return flips
-
-
-check = flip_pancakes([1,5,8,3])
-

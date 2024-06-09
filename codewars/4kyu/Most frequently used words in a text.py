@@ -4,13 +4,13 @@ import re
 
 
 def clean_string(x):
-    cleand = re.sub(r"[^a-zA-Z']", ' ', x)
+    cleand = re.sub(r"[^a-zA-Z']", " ", x)
     return cleand
 
 
 def top_3_words(text):
     cleand = clean_string(text.lower())
-    split_t = cleand.split(' ')
+    split_t = cleand.split(" ")
     prep_t = [x for x in split_t if x.replace("'", "").isalpha()]
     cnt_t = Counter(prep_t)
     return sorted(cnt_t, key=cnt_t.get, reverse=True)[:3]
