@@ -6,7 +6,7 @@ def remov_nb(n):
     for a in range(1, n):
         b = (total_sum - a) / (a + 1)
 
-        if b.is_integer() and b > a and b <= n:
+        if b.is_integer() and a < b <= n:
             result.append((a, int(b)))
             result.append((int(b), a))
 
