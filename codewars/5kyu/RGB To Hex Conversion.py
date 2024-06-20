@@ -1,3 +1,4 @@
+# 제출
 def rgb(r, g, b):
     def transformer(x):
         if x < 0:
@@ -9,7 +10,9 @@ def rgb(r, g, b):
             if len(h) == 1:
                 h = "0" + h
             return h
+
     return transformer(r) + transformer(g) + transformer(b)
+
 
 # example code
 # def rgb(r, g, b):
@@ -29,4 +32,3 @@ def fixed_tests():
         test.assert_equals(rgb(255, 255, 255), "FFFFFF", "testing max values")
         test.assert_equals(rgb(254, 253, 252), "FEFDFC", "testing near max values")
         test.assert_equals(rgb(-20, 275, 125), "00FF7D", "testing out of range values")
-

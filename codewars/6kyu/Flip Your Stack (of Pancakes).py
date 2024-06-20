@@ -1,3 +1,4 @@
+# 제출
 def flip(st, k):
     return st[:k][::-1] + st[k:]
 

@@ -1,5 +1,7 @@
 from collections import Counter
 
+# 제출
+
 
 def mix(s1, s2):
     def count_char(text):

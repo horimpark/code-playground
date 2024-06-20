@@ -1,5 +1,7 @@
 import codewars_test as test
 
+# 6/18 제출
+
 
 # 명시적으로 tuple로 반환해야 함, test 코드에 명시적으로 ecode(s)[0] 식으로 호출하기 때문
 def encode(s):

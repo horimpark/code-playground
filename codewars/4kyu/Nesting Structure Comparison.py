@@ -1,3 +1,4 @@
+# 제출
 def same_structure_as(original, other):
     def transform_zero(data):
         if isinstance(data, list):

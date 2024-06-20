@@ -2,6 +2,8 @@ import codewars_test as test
 from collections import Counter
 import re
 
+# 제출
+
 
 def clean_string(x):
     cleand = re.sub(r"[^a-zA-Z']", " ", x)

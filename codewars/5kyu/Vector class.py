@@ -1,5 +1,7 @@
 import math
 
+# 제출
+
 
 class Vector:
     def __init__(self, components):
