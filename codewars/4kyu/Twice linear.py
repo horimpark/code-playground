@@ -8,20 +8,3 @@ def dbl_linear(n):
 
     return sorted(set(res))[n]
 
-
-# %%
-def find_divisors(n):
-    divisors = []
-    for i in range(1, n + 1):
-        if n % i == 0:
-            divisors.append(i)
-    return divisors
-
-
-# %%
-
-# 예시 사용
-number = 28
-divisors = find_divisors(number)
-
-# %%
