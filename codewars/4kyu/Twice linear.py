@@ -7,4 +7,3 @@ def dbl_linear(n):
             break
 
     return sorted(set(res))[n]
-
