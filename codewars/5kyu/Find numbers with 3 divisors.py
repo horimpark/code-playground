@@ -1,17 +1,20 @@
-def cnt_div(x):
-    divs = []
-    for i in range(2, x):
-        if x % i == 0:
-            divs.append(i)
-        if len(divs) >= 3:
-            break
-    return True if len(divs) >= 3 else False
+import math
+
+
+def is_simple(n):
+    i = 2
+    while i * i <= n:
+        if n % i == 0:
+            return False
+        i += 1
+    return True
 
 
 def solution(n, m):
-    print(n, m)
     result = []
-    for x in range(n, m + 1):
-        if cnt_div(x):
-            result.append(x)
+    i = math.ceil(math.sqrt(math.sqrt(n)))
+    while i * i * i * i <= m:
+        if is_simple(i):
+            result.append(i * i * i * i)
+        i += 1
     return result
