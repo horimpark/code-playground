@@ -3,6 +3,8 @@ def dig_pow(n, p):
     if new_n % n == 0:
         return new_n // n
     return -1
+
+def dig_pow(n, p): #hh.hwang
     s = str(n)
     total = sum(int(digit) ** (p + i) for i, digit in enumerate(s))
     if total % n == 0:
