@@ -1,5 +1,15 @@
+# time out
 def parts_sums(ls):
     return [sum(ls[i:]) for i in range(len(ls))] + [0]
+
+# 성공
+def parts_sums(ls):
+    total_sum = sum(ls)
+    result = [total_sum]
+    for num in ls:
+        total_sum -= num
+        result.append(total_sum)
+    return result
 
 
 if __name__ == "__main__":
