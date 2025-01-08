@@ -20,3 +20,17 @@ if __name__ == "__main__":
     print(beeramid(3, 4))
     print(beeramid(0, 4))
     print(beeramid(-1, 4))
+
+
+#%%
+# def beeramid(bonus, price):
+#     histories = []
+#     t_price = 0
+#     height = 0
+#     while t_price < bonus:
+#         height += 1
+#         t_price += height*height*price
+#         histories.append(t_price)
+#     if not histories:
+#         return 0
+#     return height - 1 if bonus < t_price else height
