@@ -4,9 +4,9 @@ def beeramid(bonus, price):
     k = 1
     stack_price = 0
     while stack_price <= bonus:
-        stack_price += (k ** 2) * price
+        stack_price += (k**2) * price
         k += 1
-    return k-2
+    return k - 2
 
 
 if __name__ == "__main__":
@@ -22,7 +22,7 @@ if __name__ == "__main__":
     print(beeramid(-1, 4))
 
 
-#%%
+# %%
 # def beeramid(bonus, price):
 #     histories = []
 #     t_price = 0
