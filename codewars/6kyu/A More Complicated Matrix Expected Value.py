@@ -9,3 +9,14 @@ def expected_value(c: int, r: int) -> Fraction:
     low = (c + 1) * (r + 1)
 
     return Fraction(total, low)
+
+
+def expected_value(c: int, r: int) -> Fraction:
+    total = 0
+
+    for s in range(r + 1):
+        for i in range(c + 1):
+            total += (s + i) ** 2
+
+    low = (c + 1) * (r + 1)
+    return Fraction(total, low)
