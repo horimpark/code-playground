@@ -19,3 +19,15 @@ def count_smileys(arr):
             res.append(x)
 
     return len(res)
+
+
+def is_smile(x):
+    if len(x) == 3:
+        str_x = [i for i in x]
+        if all(str_x[1] != n for n in ["-", "~"]):
+            return False
+    if any(x.startswith(i) for i in [";", ":"]) and any(x.endswith(i) for i in [')', 'D']):
+        return True
+
+def count_smileys(arr):
+    return len([a for a in arr if is_smile(a)])
