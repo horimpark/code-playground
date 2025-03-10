@@ -21,3 +21,12 @@ def longest_consec(strarr, k):
     sorted_candidates = sorted(candidates, key=lambda x: (-x[1], x[0]))
 
     return sorted_candidates[0][0] if sorted_candidates else ""
+
+
+def longest_consec(strarr, k):
+    if not strarr or k <= 0 or k > len(strarr):
+        return ""
+
+    candidates = ["".join(strarr[i:i+k]) for i in range(len(strarr) - k + 1)]
+
+    return max(candidates, key=len, default="")
