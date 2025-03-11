@@ -12,3 +12,14 @@ def wave(people):
         else:
             result.append(f"{people[:x]}{people[x].upper()}{people[x+1:]}")
     return result
+
+
+def wave(people):
+    results = []
+    for i in range(len(people)):
+        words = [p for p in people]
+        if words[i] == " ":
+            continue
+        words[i] = words[i].upper()
+        results.append("".join(words))
+    return results
