@@ -15,3 +15,15 @@ def format_words(words):
             else:
                 res += ", " + x
     return res
+
+
+def format_words(words):
+    if not words:
+        return ""
+    words = [w for w in words if w.isalpha()]
+    if not words:
+        return ""
+    if len(words) == 1:
+        return words[0]
+    front = ", ".join(words[:-1])
+    return " and ".join([front, words[-1]])
