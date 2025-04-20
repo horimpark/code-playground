@@ -13,3 +13,9 @@ def group(arr):
     arr_counter = Counter(arr)
 
     return [[a] * arr_counter[a] for a in num_arr]
+
+
+from collections import Counter
+
+def group(arr):
+    return [[k] * n for k, n in Counter(arr).items()]
