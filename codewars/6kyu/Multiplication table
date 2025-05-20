@@ -1,0 +1,7 @@
+def multiplication_table(size):
+    res = []
+    for x in range(size):
+        res.append(
+            [(x+1)*(y+1) for y in range(size)]
+        )
+    return res
