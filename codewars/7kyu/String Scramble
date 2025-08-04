@@ -1,0 +1,8 @@
+def scramble(strng, array):
+    order_str = dict()
+    for x, y in zip(strng, array):
+        order_str[y] = x
+    res = []
+    for i in range(len(array)):
+        res.append(order_str[i])
+    return ''.join(res)
